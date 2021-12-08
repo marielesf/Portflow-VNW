@@ -81,27 +81,28 @@ a:hover {
 .box img {
   width: 20vw;
 }
-
-footer {
+/* como usa uma imagem sgv - as vezes aparece na tela outras vz nao */
+.footer-initial {
   height: 15vh;
   background-image: url("/assets/Grupo\ 10.svg");
   background-size: 100% 100%;
 }
-
+.footer-mobile {
+  display: none;
+}
 @media (max-width: 782px) {
-  header {
-    padding-left: 0%;
-  }
   nav {
     display: none;
-    overflow: hidden;
-    position: relative;
   }
+  /* imagem cortada */
   .banner img {
-    background-image: url("/assets/laranja azul recorte.png");
+    background-image: url("/assets/mobile/laranja azul recorte.png");
     width: 100%;
+    background-repeat: no-repeat;
     margin-top: 3%;
   }
+
+  /* icone nao esta aparecendo */
   .menu {
     width: 20vw;
     height: 100%;
@@ -114,11 +115,31 @@ footer {
   i {
     color: white;
   }
-  figure.logo {
-    float: left;
-    width: 100%;
-    height: 80px;
-    background-color: #ff8922;
-    box-sizing: border-box;
+
+  .footer-initial {
+    display: none;
+  }
+
+  /* Porq aqui a margin nao funciona?*/
+  .footer-mobile {
+    display: inline;
+    /* margin: 5% 7.5% 5% 7.5%; */
+  }
+  .footer-mobile ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #7fdbd4;
+    padding: 1rem;
+    margin: 5% 7.5% 5% 7.5%;
+  }
+  .copyright {
+    margin: 5% 7.5% 0 7.5%;
+    display: flex;
+  }
+
+  .btn-top {
+    display: flex;
+    background-color: #333333;
+    color: grey;
   }
 }

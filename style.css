@@ -84,7 +84,7 @@ a:hover {
 /* como usa uma imagem sgv - as vezes aparece na tela outras vz nao */
 .footer-initial {
   height: 15vh;
-  background-image: url("/assets/Grupo\ 10.svg");
+  background-image: url("/assets/Grupo10.svg");
   background-size: 100% 100%;
 }
 .footer-mobile {
@@ -99,12 +99,12 @@ a:hover {
     background-image: url("/assets/mobile/laranja azul recorte.png");
     width: 100%;
     background-repeat: no-repeat;
-    margin-top: 3%;
+    margin-top: 2%;
   }
 
   /* icone nao esta aparecendo */
   .menu {
-    width: 20vw;
+    width: 20%;
     height: 100%;
     justify-content: space-evenly;
     display: flex;
@@ -133,13 +133,22 @@ a:hover {
     margin: 5% 7.5% 5% 7.5%;
   }
   .copyright {
-    margin: 5% 7.5% 0 7.5%;
+    margin: 0 7.5% 0 7.5%;
     display: flex;
+  }
+  .copyright span {
+    margin-bottom: 5%;
+    display: flex;
+    width: 70%;
   }
 
   .btn-top {
     display: flex;
     background-color: #333333;
     color: grey;
+    margin-bottom: 5%;
+    padding: 0 1% 0 1%;
+    text-align: center;
+    width: 15%;
   }
 }

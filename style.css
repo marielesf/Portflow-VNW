@@ -10,7 +10,7 @@ header {
   width: 100%;
   background-color: white;
   display: flex;
-  height: 10vh;
+  height: 8vh;
   align-items: center;
 }
 h2 {
@@ -34,7 +34,6 @@ li {
 .banner {
   color: white;
   display: flex;
-  width: device-width;
   height: 80vh;
 }
 .banner h1 {
@@ -55,7 +54,8 @@ li {
 .banner img {
   background-image: url("assets/laranja azul recorte.png");
   width: 100%;
-  margin-top: 3%;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 a {
@@ -68,7 +68,7 @@ a:hover {
 
 .container {
   margin: 5% 7.5% 5% 7.5%;
-  width: 90%;
+  width: 85%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -81,7 +81,7 @@ a:hover {
 .box img {
   width: 20vw;
 }
-/* como usa uma imagem sgv - as vezes aparece na tela outras vz nao */
+
 .footer-initial {
   height: 15vh;
   background-image: url("assets/Grupo10.svg");
@@ -90,40 +90,72 @@ a:hover {
 .footer-mobile {
   display: none;
 }
+
 @media (max-width: 782px) {
+  header {
+    position: relative;
+    height: 6vh;
+  }
   nav {
     display: none;
   }
-  /* imagem cortada */
-  .banner img {
-    background-image: url("assets/mobile/laranja azul recorte.png");
-    width: 100%;
-    background-repeat: no-repeat;
-    margin-top: 2%;
-  }
 
-  /* icone nao esta aparecendo */
   .menu {
-    width: 20%;
+    width: 40%;
     height: 100%;
     justify-content: space-evenly;
     display: flex;
     align-items: center;
-    background-image: "fa fa-bars";
     background-color: black;
   }
-  i {
-    color: white;
+  .hamburger {
+    width: 15%;
+    display: block;
+    float: right;
+    cursor: pointer;
+  }
+  .hamburger span {
+    display: block;
+    height: 5px;
+    width: 100%;
+    background: white;
+    margin-top: 15%;
+  }
+
+  .banner img {
+    background-image: url("assets/mobile/laranja azul recorte.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .banner h1 {
+    position: absolute;
+    font-weight: bold;
+    top: 55%;
+    font-size: 12.5vw;
+  }
+
+  .banner spam {
+    position: absolute;
+    top: 75%;
+    left: 7.5%;
+    font-size: 5.5vw;
+  }
+
+  .box {
+    margin-bottom: 8vw;
+    height: 100%;
+    width: 100%;
+  }
+  .box img {
+    width: 100%;
   }
 
   .footer-initial {
     display: none;
   }
 
-  /* Porq aqui a margin nao funciona?*/
   .footer-mobile {
     display: inline;
-    /* margin: 5% 7.5% 5% 7.5%; */
   }
   .footer-mobile ul {
     display: flex;
@@ -138,17 +170,20 @@ a:hover {
   }
   .copyright span {
     margin-bottom: 5%;
-    display: flex;
-    width: 70%;
+    width: 80%;
+    font-size: 10px;
   }
 
-  .btn-top {
+  .btn-topo {
     display: flex;
     background-color: #333333;
     color: grey;
     margin-bottom: 5%;
-    padding: 0 1% 0 1%;
     text-align: center;
-    width: 15%;
+    width: 20%;
+    justify-content: center;
+    height: 5vh;
+    margin-left: 7.5%;
+    list-style: none;
   }
 }

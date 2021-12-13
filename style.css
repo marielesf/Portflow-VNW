@@ -15,20 +15,18 @@ header {
 }
 h2 {
   padding-left: 7.5%;
+  width: 65%;
 }
-/* Corta quando faz o resize da tela */
 nav {
-  justify-content: space-evenly;
-  display: flex;
-  border: solid red;
-  margin-left: 60%;
+  margin-right: 7.5%;
 }
 ul {
   list-style: none;
   display: flex;
+  align-items: center;
 }
 li {
-  padding-left: 1rem;
+  padding-left: 5%;
 }
 
 .banner {
@@ -130,15 +128,14 @@ a:hover {
   .banner h1 {
     position: absolute;
     font-weight: bold;
-    top: 55%;
     font-size: 12.5vw;
   }
 
   .banner spam {
     position: absolute;
-    top: 75%;
+    margin-top: 28%;
     left: 7.5%;
-    font-size: 5.5vw;
+    font-size: 5vw;
   }
 
   .box {

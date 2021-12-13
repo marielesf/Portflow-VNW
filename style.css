@@ -20,13 +20,15 @@ h2 {
 nav {
   margin-right: 7.5%;
 }
+.menu-nav {
+  width: 30rem;
+  justify-content: space-evenly;
+}
 ul {
   list-style: none;
   display: flex;
   align-items: center;
-}
-li {
-  padding-left: 5%;
+  justify-content: space-around;
 }
 
 .banner {
@@ -80,12 +82,28 @@ a:hover {
   width: 20vw;
 }
 
-.footer-initial {
+.footer {
   height: 15vh;
-  background-image: url("assets/Grupo10.svg");
+  background-color: #ccc;
   background-size: 100% 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
 }
-.footer-mobile {
+.footer-midia {
+  width: 25%;
+  margin-left: 7.5%;
+}
+
+.copyright {
+  margin: 0 0 0 7.5%;
+  display: flex;
+}
+.copyright span {
+  width: 55%;
+  font-size: 10px;
+}
+.btn-topo {
   display: none;
 }
 
@@ -129,11 +147,12 @@ a:hover {
     position: absolute;
     font-weight: bold;
     font-size: 12.5vw;
+    top: 55%;
   }
 
   .banner spam {
     position: absolute;
-    margin-top: 28%;
+    margin-top: 58%;
     left: 7.5%;
     font-size: 5vw;
   }
@@ -147,40 +166,35 @@ a:hover {
     width: 100%;
   }
 
-  .footer-initial {
-    display: none;
-  }
-
-  .footer-mobile {
+  .footer {
     display: inline;
   }
-  .footer-mobile ul {
-    display: flex;
-    justify-content: space-evenly;
+  .footer-midia {
+    width: 84.5%;
+  }
+  .footer ul {
     background-color: #7fdbd4;
     padding: 1rem;
     margin: 5% 7.5% 5% 7.5%;
   }
+
   .copyright {
-    margin: 0 7.5% 0 7.5%;
-    display: flex;
-  }
-  .copyright span {
-    margin-bottom: 5%;
-    width: 80%;
-    font-size: 10px;
+    margin: 0 7.5% 3% 7.5%;
   }
 
   .btn-topo {
     display: flex;
     background-color: #333333;
-    color: grey;
-    margin-bottom: 5%;
+    margin: 0 0 0 7.5%;
     text-align: center;
     width: 20%;
     justify-content: center;
     height: 5vh;
-    margin-left: 7.5%;
-    list-style: none;
+    margin-left: 28%;
+  }
+
+  .btn-topo a {
+    color: #ccc;
+    text-decoration: none;
   }
 }

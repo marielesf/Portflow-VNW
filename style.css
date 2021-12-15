@@ -28,7 +28,7 @@ ul {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .banner {
@@ -167,6 +167,10 @@ a:hover {
   }
   .box img {
     width: 100%;
+  }
+
+  ul {
+    justify-content: space-evenly;
   }
 
   .footer {

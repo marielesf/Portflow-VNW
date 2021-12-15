@@ -28,7 +28,7 @@ ul {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .banner {
@@ -42,7 +42,7 @@ ul {
   font-weight: bold;
   top: 35vh;
   left: 7.5%;
-  font-size: 3.5vw;
+  font-size: 3vw;
 }
 .banner spam {
   display: flex;
@@ -71,7 +71,6 @@ a:hover {
   width: 85%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 }
 .box {
   margin-bottom: 1vw;
@@ -101,7 +100,11 @@ a:hover {
 }
 .copyright span {
   width: 55%;
-  font-size: 10px;
+  font-size: 13px;
+}
+.copyright-footer {
+  padding: 1%;
+  display: flex;
 }
 .btn-topo {
   display: none;
@@ -147,12 +150,12 @@ a:hover {
     position: absolute;
     font-weight: bold;
     font-size: 12.5vw;
-    top: 55%;
+    top: 40%;
   }
 
   .banner spam {
     position: absolute;
-    margin-top: 58%;
+    margin-top: 32%;
     left: 7.5%;
     font-size: 5vw;
   }
@@ -182,19 +185,35 @@ a:hover {
     margin: 0 7.5% 3% 7.5%;
   }
 
+  .copyright-footer {
+    margin: 0 7.5% 3% 7.5%;
+    padding: 0;
+  }
+
   .btn-topo {
     display: flex;
     background-color: #333333;
-    margin: 0 0 0 7.5%;
-    text-align: center;
     width: 20%;
     justify-content: center;
     height: 5vh;
-    margin-left: 28%;
   }
 
   .btn-topo a {
     color: #ccc;
     text-decoration: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .banner h1 {
+    font-size: 12.5vw;
+    top: 55%;
+  }
+  .banner spam {
+    margin-top: 58%;
+    left: 7.5%;
+  }
+  .copyright-footer {
+    font-size: 10px;
   }
 }

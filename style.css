@@ -30,6 +30,9 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
+li {
+  width: 50%;
+}
 
 .banner {
   color: white;
@@ -56,6 +59,7 @@ ul {
   width: 100%;
   background-repeat: no-repeat;
   background-size: auto;
+  background-position: 60%;
 }
 
 a {
